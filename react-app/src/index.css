@@ -139,7 +139,6 @@ li a {
 
 .bioSection {
   min-height: 100dvh;
-  width: 100%;
   color: white;
   background-color: black;
 }
@@ -206,6 +205,81 @@ li a {
   padding: 1rem;
 }
 
+.trackSection {
+  min-height: 50dvh;
+  width: 100%;
+  color: white;
+  background-color: #020226;
+}
+
+.trackWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.trackTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trackTitle h1 {
+  font-family: Six Caps;
+  font-size: 15rem;
+}
+
+.trackWrapper2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 10rem;
+}
+
+.trackWrapper2 img {
+  height: 20rem;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.box-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.box-track img {
+  padding: 2rem;
+}
+
+.box-track h1 {
+  font-size: 3rem;
+  font-family: instrument serif;
+}
+
+.tourSection {
+  min-height: 100dvh;
+  color: white;
+  padding: 10rem;
+  background-color: black;
+}
+
+.tourWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box-tour {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.box-tour img {
+  height: 50rem;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
 @media (max-width: 1355px) {
   html {
     font-size: 50%;
@@ -244,7 +318,7 @@ li a {
   }
 }
 
-@media (max-width: 798px) {
+@media (max-width: 815px) {
   .homeWrapper {
     grid-template-columns: 1fr;
   }
@@ -311,6 +385,18 @@ li a {
   .image1 img {
     height: 65rem;
   }
+
+  .trackTitle h1 {
+    font-size: 15rem;
+  }
+
+  .tourWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .box-tour img {
+    height: 40rem;
+  }
 }
 
 @media (max-width: 735px) {
@@ -337,11 +423,31 @@ li a {
   .image1 img {
     height: 55rem;
   }
+
+  .trackTitle h1 {
+    font-size: 13rem;
+  }
+
+  .trackWrapper2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box-tour img {
+    height: 40rem;
+  }
 }
 
 @media (max-width: 377px) {
   .side-h1 {
     font-size: 10rem;
+  }
+  .bioTitle h1 {
+    font-size: 11rem;
+  }
+
+  .trackTitle h1 {
+    font-size: 11rem;
   }
 }
 
@@ -370,6 +476,12 @@ li a {
   }
 
   .image1 img {
+    height: 30rem;
+  }
+  .trackTitle h1 {
+    font-size: 10rem;
+  }
+  .box-tour img {
     height: 30rem;
   }
 }

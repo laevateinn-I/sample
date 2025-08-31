@@ -1,6 +1,8 @@
 import Home from "./home";
 import Banner from "./banner";
 import Bio from "./biography";
+import Tracks from "./tracks";
+import Tour from "./tour";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Home />
       <Banner />
       <Bio />
+      <Tracks />
+      <Tour />
     </>
   );
 }
