@@ -185,20 +185,23 @@ li a {
 
   .compass {
     display: flex;
-    justify-content: center;
-    height: 7rem;
+    justify-content: end;
+    align-self: center;
+    height: 5rem;
+    padding-right: 2rem;
   }
 
   .offContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .off-screen-menu {
     font-family: Six Caps;
     font-size: 10rem;
     position: fixed;
-    top: 45rem;
+    top: 35rem;
     width: auto;
     background-color: rgb(129, 2, 31, 0.8);
     border-radius: 2rem;

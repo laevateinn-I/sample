@@ -26,6 +26,9 @@ function Home() {
         </div>
 
         <div class="homeWrapper2">
+          <div className="compass" onClick={toggleMenu}>
+            <img src={compass} alt="Compass" />
+          </div>
           <div class="icons">
             <img src={fb} alt="" />
             <img src={yt} alt="" />
@@ -52,11 +55,7 @@ function Home() {
           </ul>
         </div>
 
-        <div className="compassWrapper">
-          <div className="compass" onClick={toggleMenu}>
-            <img src={compass} alt="Compass" />
-          </div>
-        </div>
+        <div className="compassWrapper"></div>
 
         <div className="offContainer">
           <div className={`off-screen-menu ${menuOpen ? "show" : ""}`}>
