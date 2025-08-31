@@ -69,7 +69,8 @@ html {
 
 .compassWrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  min-height: 10vh;
 }
 
 .offContainer {
@@ -186,7 +187,6 @@ li a {
     display: flex;
     justify-content: center;
     height: 7rem;
-    padding-top: 8rem;
   }
 
   .offContainer {
