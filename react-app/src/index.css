@@ -132,7 +132,81 @@ li a {
   color: white;
 }
 
-@media (max-width: 1254px) {
+.banner {
+  background-color: #81021f;
+  min-height: 30dvh;
+}
+
+.bioSection {
+  min-height: 100dvh;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+
+.bioWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: auto;
+}
+
+.bioTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bioTitle h1 {
+  font-family: Six Caps;
+  font-size: 20rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image img {
+  height: 20rem;
+  padding: 2rem;
+  max-width: 100%;
+  border-radius: 2.5rem;
+}
+
+.image1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image1 img {
+  height: 70rem;
+  max-width: 100%;
+  border-radius: 2rem;
+}
+
+.theStory {
+  display: inline-block;
+  padding: 2rem;
+}
+
+.theStory h1 {
+  font-size: 2.5rem;
+  font-family: instrument serif;
+  display: flex;
+  justify-content: start;
+}
+
+.theStory p {
+  font-size: 3.3rem;
+  font-family: instrument serif;
+  padding: 1rem;
+}
+
+@media (max-width: 1355px) {
   html {
     font-size: 50%;
   }
@@ -145,7 +219,7 @@ li a {
   }
 }
 
-@media (max-width: 1003px) {
+@media (max-width: 1072px) {
   html {
     font-size: 37.5%;
   }
@@ -170,7 +244,7 @@ li a {
   }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 798px) {
   .homeWrapper {
     grid-template-columns: 1fr;
   }
@@ -185,10 +259,11 @@ li a {
 
   .compass {
     display: flex;
-    justify-content: end;
+    position: fixed;
+    justify-content: start;
     align-self: center;
     height: 5rem;
-    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .offContainer {
@@ -216,6 +291,52 @@ li a {
     opacity: 1;
     pointer-events: auto;
   }
+
+  .bioTitle h1 {
+    font-size: 18rem;
+  }
+
+  .theStory h1 {
+    font-size: 2rem;
+  }
+
+  .theStory p {
+    font-size: 3rem;
+  }
+
+  .image img {
+    height: 18rem;
+  }
+
+  .image1 img {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 735px) {
+  .bioWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .bioTitle h1 {
+    font-size: 13rem;
+  }
+
+  .theStory h1 {
+    font-size: 1.5rem;
+  }
+
+  .theStory p {
+    font-size: 2rem;
+  }
+
+  .image img {
+    height: 16rem;
+  }
+
+  .image1 img {
+    height: 55rem;
+  }
 }
 
 @media (max-width: 377px) {
@@ -231,5 +352,24 @@ li a {
 
   .icons {
     padding-top: 75rem;
+  }
+  .bioTitle h1 {
+    font-size: 10rem;
+  }
+
+  .theStory h1 {
+    font-size: 1.3rem;
+  }
+
+  .theStory p {
+    font-size: 1.7rem;
+  }
+
+  .image img {
+    height: 13rem;
+  }
+
+  .image1 img {
+    height: 30rem;
   }
 }
