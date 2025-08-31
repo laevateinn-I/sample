@@ -67,7 +67,7 @@ function Home() {
                 <Link
                   to="bio"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   biography
@@ -77,7 +77,7 @@ function Home() {
                 <Link
                   to="tracks"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   tracks
@@ -87,7 +87,7 @@ function Home() {
                 <Link
                   to="tour"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   tours
@@ -97,7 +97,7 @@ function Home() {
                 <Link
                   to="merch"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   merch
@@ -116,7 +116,7 @@ function Home() {
                 <Link
                   to="bio"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   biography
@@ -126,7 +126,7 @@ function Home() {
                 <Link
                   to="tracks"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   tracks
@@ -136,7 +136,7 @@ function Home() {
                 <Link
                   to="tour"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   tours
@@ -146,7 +146,7 @@ function Home() {
                 <Link
                   to="merch"
                   smooth={true}
-                  duration={1000}
+                  duration={300}
                   onClick={() => setMenuOpen(false)}
                 >
                   merch
