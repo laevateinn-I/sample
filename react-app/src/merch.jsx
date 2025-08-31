@@ -6,7 +6,7 @@ import cart from "./assets/Images/shopping-cart.png";
 function Merch() {
   return (
     <>
-      <section className="merchSection">
+      <section className="merchSection" id="merch">
         <div className="cartWrapper">
           <div className="cart">
             <img src={cart} alt="" />

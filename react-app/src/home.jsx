@@ -15,7 +15,7 @@ function Home() {
   };
   return (
     <>
-      <section class="homeSection">
+      <section class="homeSection" id="home">
         <div class="homeWrapper">
           <div class="logo">
             <img src={logo} alt="" />
@@ -30,26 +30,78 @@ function Home() {
             <img src={compass} alt="Compass" />
           </div>
           <div class="icons">
-            <img src={fb} alt="" />
-            <img src={yt} alt="" />
-            <img src={ig} alt="" />
-            <img src={sp} alt="" />
+            <a
+              href="https://www.facebook.com/nobodysburden2021/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={fb} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.youtube.com/@nobodysburden5037"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={yt} alt="YouTube" />
+            </a>
+            <a
+              href="https://www.instagram.com/nobodysburden/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={ig} alt="Instagram" />
+            </a>
+            <a
+              href="https://open.spotify.com/artist/1mlIdiAomqKPNakzW8T8gi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={sp} alt="Spotify" />
+            </a>
           </div>
         </div>
         <div class="navLinks">
           <ul>
             <div class="navWrapper">
               <li>
-                <a href="">biography</a>
+                <Link
+                  to="bio"
+                  smooth={true}
+                  duration={1000}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  biography
+                </Link>
               </li>
               <li>
-                <a href="">tracks</a>
+                <Link
+                  to="tracks"
+                  smooth={true}
+                  duration={1000}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  tracks
+                </Link>
               </li>
               <li>
-                <a href="">tour</a>
+                <Link
+                  to="tour"
+                  smooth={true}
+                  duration={1000}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  tours
+                </Link>
               </li>
               <li>
-                <a href="">merch</a>
+                <Link
+                  to="merch"
+                  smooth={true}
+                  duration={1000}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  merch
+                </Link>
               </li>
             </div>
           </ul>

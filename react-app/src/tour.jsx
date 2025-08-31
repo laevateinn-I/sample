@@ -8,7 +8,7 @@ import banner6 from "./assets/Images/tour6.jpg";
 function Tour() {
   return (
     <>
-      <section className="tourSection">
+      <section className="tourSection" id="tour">
         <div className="tourWrapper">
           <div className="box-tour">
             <img src={banner1} alt="" />

@@ -5,7 +5,7 @@ import drummer from "./assets/Images/drummer2.jpg";
 function Bio() {
   return (
     <>
-      <section className="bioSection">
+      <section className="bioSection" id="bio">
         <div className="bioWrapper">
           <div className="bioTitle">
             <h1>biography</h1>
