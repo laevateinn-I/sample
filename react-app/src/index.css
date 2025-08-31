@@ -18,43 +18,47 @@ html {
 
 .homeWrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  min-height: auto;
+}
+
+.logo-side-container {
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
-  padding: 7rem;
+  display: flex;
+  justify-content: center;
 }
 
 .logo img {
-  height: 20rem;
+  height: 15rem;
   width: auto;
 }
 
 .sideText {
-  position: relative;
   display: flex;
-  justify-content: end;
-  width: 94%;
-  padding-top: 8rem;
+  justify-content: center;
+  position: relative;
+  width: auto;
 }
 
 .side-h1 {
-  writing-mode: sideways-rl;
   color: #81021f;
   font-family: Six Caps;
-  font-size: 15rem;
+  font-size: 10rem;
 }
 
 .homeWrapper2 {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  min-height: 55vh;
 }
 
 .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-row: 2;
+  justify-self: center;
 }
 
 .icons img {
@@ -131,16 +135,12 @@ li a {
   html {
     font-size: 50%;
   }
-
-  .side-h1 {
-    font-size: 18rem;
+  .icons img {
+    height: 3.5rem;
   }
 
-  .logo img {
-    height: 24rem;
-  }
-  .icons {
-    padding-top: 10rem;
+  .homeWrapper2 {
+    min-height: 60dvh;
   }
 }
 
@@ -150,50 +150,32 @@ li a {
   }
 
   .side-h1 {
-    font-size: 23rem;
-    padding-top: 5rem;
+    font-size: 12rem;
   }
 
-  .icons {
-    padding-top: 20rem;
+  .logo img {
+    height: 20rem;
   }
-
   .icons img {
-    height: 4.5rem;
+    height: 4rem;
+  }
+
+  .homeWrapper2 {
+    min-height: 62dvh;
   }
 
   .navLinks {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
-@media (max-width: 752px) {
+@media (max-width: 785px) {
   .homeWrapper {
     grid-template-columns: 1fr;
   }
 
-  .sideText {
-    padding: 0;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    padding-top: 3rem;
-  }
-
   .side-h1 {
-    writing-mode: horizontal-tb;
-    font-size: 14rem;
-    padding: 0;
-  }
-
-  .icons {
-    padding-top: 60rem;
+    font-size: 11rem;
   }
 
   .navLinks {
@@ -235,13 +217,13 @@ li a {
 
 @media (max-width: 377px) {
   .side-h1 {
-    font-size: 13rem;
+    font-size: 10rem;
   }
 }
 
 @media (max-width: 350px) {
   .side-h1 {
-    font-size: 12rem;
+    font-size: 9rem;
   }
 
   .icons {

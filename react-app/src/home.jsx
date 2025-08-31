@@ -32,24 +32,24 @@ function Home() {
             <img src={ig} alt="" />
             <img src={sp} alt="" />
           </div>
-          <div class="navLinks">
-            <ul>
-              <div class="navWrapper">
-                <li>
-                  <a href="">biography</a>
-                </li>
-                <li>
-                  <a href="">tracks</a>
-                </li>
-                <li>
-                  <a href="">tour</a>
-                </li>
-                <li>
-                  <a href="">merch</a>
-                </li>
-              </div>
-            </ul>
-          </div>
+        </div>
+        <div class="navLinks">
+          <ul>
+            <div class="navWrapper">
+              <li>
+                <a href="">biography</a>
+              </li>
+              <li>
+                <a href="">tracks</a>
+              </li>
+              <li>
+                <a href="">tour</a>
+              </li>
+              <li>
+                <a href="">merch</a>
+              </li>
+            </div>
+          </ul>
         </div>
 
         <div className="compassWrapper">
