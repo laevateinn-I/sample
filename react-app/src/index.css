@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Six+Caps&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Six+Caps&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .homeSection {
@@ -280,6 +281,116 @@ li a {
   border-radius: 1rem;
 }
 
+.merchSection {
+  min-height: 50dvh;
+  color: white;
+  padding: 5rem;
+  background-color: #212223;
+}
+
+.cartWrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.cart img {
+  height: 5rem;
+  filter: brightness(0) invert(1);
+}
+
+.merchWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.merch-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 2rem;
+}
+
+.merch-box img {
+  height: 40rem;
+  border: 1px solid #fe7f2d;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.merch-box h1 {
+  font-size: 4rem;
+  font-family: instrumental serif;
+}
+
+.merch-box button {
+  height: 5rem;
+  font-family: instrumental serif;
+  font-size: 2rem;
+  width: 20%;
+}
+
+footer {
+  min-height: 33dvh;
+  background-color: #81021f;
+}
+
+.footerWrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image img {
+  height: 12rem;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-title h1 {
+  color: white;
+  font-family: Six Caps;
+  font-size: 7rem;
+  width: 100%;
+}
+
+.outroWrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-footer img {
+  height: 3rem;
+  filter: brightness(0) invert(1);
+  padding: 2rem;
+}
+
+.footer-outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-outro p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: roboto;
+}
+
 @media (max-width: 1355px) {
   html {
     font-size: 50%;
@@ -290,6 +401,9 @@ li a {
 
   .homeWrapper2 {
     min-height: 60dvh;
+  }
+  .merchWrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -436,6 +550,19 @@ li a {
   .box-tour img {
     height: 40rem;
   }
+  .merchWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .merch-box img {
+    height: 50rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .merch-box img {
+    height: 40rem;
+  }
 }
 
 @media (max-width: 377px) {
@@ -448,6 +575,10 @@ li a {
 
   .trackTitle h1 {
     font-size: 11rem;
+  }
+
+  .merch-box img {
+    height: 30rem;
   }
 }
 
