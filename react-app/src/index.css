@@ -388,6 +388,93 @@ li a:hover {
   width: 20%;
 }
 
+/* Cart Indicator */
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cartIndicator {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.7rem 0.7rem;
+}
+
+/* Cart Drawer */
+.cartDrawer {
+  position: fixed;
+  top: 0;
+  left: -100%; /* hidden */
+  width: 50rem;
+  height: 100%;
+  background: #111;
+  color: white;
+  padding: 2rem;
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.cartDrawer.open {
+  left: 0;
+}
+
+.cartDrawer h2 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartDrawer p {
+  font-size: 3rem;
+}
+
+.cartDrawer h3 {
+  font-size: 3rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cartItem img {
+  min-width: 50%;
+  height: 20rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+.qtyControls {
+  display: flex;
+  font-size: 3rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qtyControls button {
+  background: transparent;
+  border: none;
+  padding: 1rem;
+  font-size: 5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.qtyControls .decrease {
+  color: red;
+}
+
+.qtyControls .increase {
+  color: green;
+}
+
 footer {
   min-height: 33dvh;
   background-color: #81021f;
@@ -711,5 +798,9 @@ footer {
   }
   .box-tour img {
     height: 30rem;
+  }
+
+  .cartDrawer {
+    width: 40rem;
   }
 }
