@@ -475,6 +475,21 @@ li a:hover {
   color: green;
 }
 
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+}
+
 footer {
   min-height: 33dvh;
   background-color: #81021f;

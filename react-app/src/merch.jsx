@@ -15,6 +15,7 @@ function Merch() {
   const [cartItems, setCartItems] = useState([]);
 
   const toggleCart = () => setCartOpen(!cartOpen);
+  const closeCart = () => setCartOpen(false);
 
   const addToCart = (product) => {
     setCartItems((prev) => {
@@ -65,7 +66,13 @@ function Merch() {
 
         {/* Cart Drawer */}
         <div className={`cartDrawer ${cartOpen ? "open" : ""}`}>
-          <h2>Your Cart</h2>
+          <div className="cartHeader">
+            <h2>Your Cart</h2>
+            <button className="closeBtn" onClick={closeCart}>
+              ✕
+            </button>
+          </div>
+
           {cartItems.length === 0 ? (
             <p>No items in cart</p>
           ) : (
